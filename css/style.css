@@ -52,7 +52,10 @@ p{
 .logo>img{
     padding: 7px;
 }
-.menu{
+#btn-control{
+    display: none;
+}
+#menu-responsive{
     align-self: center;
 }
 .menu > li {
@@ -199,14 +202,14 @@ p{
     overflow: hidden;
     margin-top: 25%;
     margin-left: 50%;
-    animation: gear 50s infinite;
+    animation: gear 60s infinite;
 }
 @keyframes gear {
    from{
-       transform: scale(1, 1) rotate(0deg);
+       transform: rotate(0deg);
    }
     to{
-        transform: scale(1, -1) rotate(360deg);
+        transform: rotate(360deg);
     }
 }
 
@@ -237,7 +240,7 @@ h3> span{
     color:#ccc;
 }
 .check-box{
-    font-size: 16pt;
+    font-size: 14pt;
     padding: 0;
     margin-left: -10px;
 }
@@ -258,7 +261,7 @@ h3> span{
 /*just relax end*/
 /*latest project*/
 .latest-project{
-    height: 825px;
+    height: auto;
     width:100%;
 }
 .latest-project>h3{
@@ -353,7 +356,7 @@ h3> span{
 
 /*culture values*/
 .culture-values{
-    height: 560px;
+    height: auto;
     width:100%;
     display: flex;
     background: #f9f9f9;
@@ -362,7 +365,7 @@ h3> span{
     justify-content: center;
 }
 .culture-values-blocks-title{
-    margin-bottom:80px;
+    margin: 100px 0 80px 0;
 }
 .culture-values-blocks-title > p{
     font-size: 15pt;
@@ -373,7 +376,7 @@ h3> span{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 0 163px 0 163px;
+    margin: 0 163px 100px 163px;
 }
 .icon-culture-values{
     display: flex;
@@ -391,9 +394,9 @@ h3> span{
 .icon-culture-values:nth-child(2):before, .icon-culture-values:nth-child(2):after{
     content: "";
     position: absolute;
-    width:170px;
+    width:50%;
     height: 3px;
-    top: 43px;
+    margin-top: -20%;
     background: #777;
 }
 .icon-culture-values:nth-child(2):after{
@@ -413,13 +416,16 @@ h3> span{
 
 /*our awesome clients*/
 .our-awesome-clients{
-    height: 810px;
+    height:auto;
     width:100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
+ .our-awesome-clients-title{
+     margin-top: 100px;
+ }
 .our-awesome-clients-title > p{
     font-size: 15pt;
     text-align: center ;
@@ -443,15 +449,17 @@ h3> span{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
     padding: 0 35px 0 35px;
 }
 .our-awesome-clients-quote-container{
     display: flex;
     flex-direction: row;
-    margin: 0 258px 0 250px;
+    margin: 50px 258px 0 250px;
 }
 .quote-container-second{
     flex-direction: row-reverse;
+    margin-bottom: 100px;
 }
 
 .quote-container:before{
@@ -483,7 +491,7 @@ h3> span{
 /*our awesome clients end*/
 /*contact us*/
 .ready-to-your-next-project{
-    height: 250px;
+    height: auto;
     width: 100%;
     background: #7cc576;
     display: flex;
@@ -493,7 +501,8 @@ h3> span{
 }
 .ready-to-your-next-project>h3{
     color: #fff;
-    margin-bottom: 30px;
+    text-align: center;
+    margin: 60px 0 30px 0;
 }
 .btn-lik-contact-us{
     text-transform: uppercase;
@@ -503,6 +512,7 @@ h3> span{
     border: 2px solid #fff;
     padding: 10px;
     border-radius: 8px;
+    margin-bottom: 60px;
 }
 .btn-lik-contact-us:hover{
     color: #7cc576;
@@ -511,26 +521,30 @@ h3> span{
 /*contact us end*/
 /*business partners*/
 .business-partners{
-    height: 165px;
+    height: auto;
     width:100%;
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin: 60px 0 60px 0;
 }
 /*business partners end*/
 /*top footer*/
 .top-footer{
-    height: 365px;
+    height: auto;
     width:100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: center;
     background: #222;
 }
+
 .top-footer>ul{
-    margin: 40px 35px 0 35px;
+    margin: 55px 35px 55px 35px;
 }
 .top-footer>ul:nth-child(1){
     width: 200px;
@@ -573,23 +587,27 @@ h3> span{
 /*top footer end*/
 /*footer*/
 .footer{
-    height: 100px;
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-
-
 }
 .footer> span{
     color: #555;
     font-size: 12pt;
-    margin: 0 20px 0 83px;
+    margin: 50px 20px 50px 83px;
+}
+.social{
+    margin: 55px 50px 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 .social>li{
     list-style: none;
     display: inline;
-    margin-left: 10px;
+    margin: 0 0 50px 10px;
     position:relative;
 }
 .social > li > img{
